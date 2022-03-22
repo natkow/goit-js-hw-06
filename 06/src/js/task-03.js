@@ -19,8 +19,9 @@ for (let i of images) {
   const newImage = document.createElement("img");
   newImage.src = i.url;
   newImage.alt = i.alt;
+  newImage.height = "350";
   newElement.append(newImage);
-  list.insertAdjacentHTML("afterbegin", newImage);
+  list.insertAdjacentHTML("beforeend", newElement.innerHTML);
   
 } 
 
